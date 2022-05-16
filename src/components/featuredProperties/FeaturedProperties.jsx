@@ -5,6 +5,7 @@ const FeaturedProperties = () => {
   const { data, loading, error } = useFetch(
     `http://localhost:8001/api/hotels?featured=true&limit=4`
   );
+
   return (
     <div className="fp">
       {loading ? (
